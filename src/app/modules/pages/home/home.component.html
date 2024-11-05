@@ -1,0 +1,41 @@
+<div>
+    <app-navigation></app-navigation>
+    <div class="p-6">
+        <div class="flex flex-col items-center">
+            <div class="flex gap-3">
+          
+                <div class=" text-xl font-bold">Location</div>
+            </div>
+            <div>{{dataWheather.location.name}}, {{dataWheather.location.country}}</div>
+            <div class="py-10 px-3  glass black-color rounded-md w-full my-5">
+             <div class="flex justify-center items-center">
+                <img class="w-24" src="{{dataWheather.current.condition.icon}}" alt="">
+                   <div class="flex  font-bold text-7xl"> {{dataWheather.current.temp_c}}</div>
+                   <div class="font-bold text-6xl">°C</div>
+             </div>
+             <div class="flex justify-center mt-3">
+                {{dataWheather.current.condition.text}}
+             </div>
+       
+            </div>
+            <div class="flex justify-between w-full gap-3">
+                <div class="bg-white  py-10 px-3 flex flex-col justify-center items-center  rounded-xl w-full shadow-xl">
+                    <div>Feels</div>
+                    <div>like</div>
+                    <div  class="font-bold text-3xl mt-3 blue-color">{{dataWheather.current.feelslike_c}}</div>
+                </div>
+                <div class="bg-white  py-10 px-3 flex flex-col justify-center items-center  rounded-xl w-full shadow-xl">
+                    <div>Humidity</div>
+                    <div>( RH )</div>
+                    <div  class="font-bold text-3xl mt-3 blue-color">{{dataWheather.current.humidity}}</div>
+                </div>
+                <div class="bg-white py-10 px-3 flex flex-col justify-center items-center  rounded-xl w-full shadow-xl">
+                    <div>UltraViolet</div>
+                    <div>( UV )</div>
+                    <div class="font-bold text-3xl mt-3 blue-color ">{{dataWheather.current.uv}}</div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
