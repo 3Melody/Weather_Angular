@@ -13,7 +13,8 @@ export class DataService {
   constructor( private http: HttpClient) { }
 
   getCurrentWeather(city: string): Observable<any> {
-    const url = `${this.apiUrl}/current.json?key=${this.apiKey}&q=${city}`;
+    const url = `${this.apiUrl}/current.json?key=${this.apiKey}&q=${city}&aqi=yes`;
+
     return this.http.get<any>(url);
   }
 

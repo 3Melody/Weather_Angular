@@ -1,7 +1,7 @@
 <div>
     <app-navigation></app-navigation>
-    <div class="p-6">
-        <div class="flex flex-col items-center">
+    <div class="p-6 ">
+        <div class="flex flex-col items-center ">
             <div class="flex gap-3">
           
                 <div class=" text-xl font-bold">Location</div>
@@ -36,6 +36,15 @@
                 </div>
               
             </div>
+            <div class="flex justify-around items-end  bg-transparent border border-white p-6 w-full rounded-xl mt-6 text-white">
+                <div class="text-xl flex ">PM 2.5</div>
+                <div class="text-3xl">:</div>
+                <div class="flex gap-3">
+                    <div class="text-2xl font-bold">{{dataWheather.current.air_quality.pm2_5}}</div>
+                    <div class="text-sm flex items-center">µg/m3</div>
+                </div>
+            </div>
+            
         </div>
     </div>
 </div>
